@@ -2,10 +2,6 @@ Template.entrepriseEdit.onCreated(function() {
   Session.set('entrepriseEditErrors', {});
 });
 
-Template.entrepriseEdit.rendered ({
-    var GeoCode = $('#GeoCode').attr('_val')
-    $('#GeoCode option:nth-child(' + GeoCode + ')').attr('selected', 'selected')
-});
 Template.entrepriseEdit.helpers({
   errorMessage: function(field) {
     return Session.get('entrepriseEditErrors')[field];

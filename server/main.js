@@ -4,16 +4,5 @@ Meteor.startup(function () {
       email: 'GoeAdmin@geo.com',
       password: 'GeoCode$'
     });
-    seedgeolocId = geoloc.insert({
-      poly: '',
-      user:'madey@doctoratmarketing.com',
-
-    });
   }
-
-
-
-
-
-
 });

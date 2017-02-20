@@ -25,7 +25,9 @@ path: '/entreprises/:_id/edit',
 data: function() { return Entreprises.findOne(this.params._id); }
 });
 
-
+Router.route('/pageTwo', function () {
+    this.render('pageTwo');
+});
 
 Router.route('/', function () {
     Router.go('entreprises');
@@ -40,24 +42,10 @@ Router.route('/login', function () {
     this.render('login');
 });
 
-Router.route('/territoires', function () {
-    //this.render('googleMaps');
-    this.render('territoires');
+Router.route('/accueil', function () {
+    this.render('home');
 });
 
-Router.route('/territoires-design', function () {
-    this.render('googleMaps');
-
-});
-Router.route('/Nouveau_territoire', function () {
-    this.render('territoiresForm');
-});
-Router.route('teritoireEdit', {
-path: '/territoire/:_id/edit',
-data: function() { return Entreprises.findOne(this.params._id); }
-});
-
-Router.route('teritoireAssign', {
-path: '/territoireAssign/:_id/',
-
+Router.route('/login2', function () {
+    this.render('pageTwo');
 });

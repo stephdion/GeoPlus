@@ -9,12 +9,6 @@ Template.topNavbar.rendered = function(){
 
 Template.topNavbar.events({
 
-  'click .logout': function(event){
-    alert(event);
-        event.preventDefault();
-        Meteor.logout();
-    }
-
     // Toggle left navigation
     'click #navbar-minimalize': function(event){
 
