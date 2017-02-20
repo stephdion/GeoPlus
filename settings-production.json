@@ -1,0 +1,10 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://admingeoplus:geoplus123$@ds157349.mlab.com:57349/geoplus"
+
+    }
+  },
+  "public": {},
+  "private": {}
+}

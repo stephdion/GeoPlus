@@ -1,5 +1,14 @@
 import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+
+  if (Meteor.users.find().count() === 0) {
+      seedUserId = Accounts.createUser({
+        email: 'GoeAdmin@geo.com',
+        password: 'GeoCode$'
+      });
+
+    }
+
+
 });
