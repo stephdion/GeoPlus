@@ -31,4 +31,25 @@ Meteor.startup(() => {
 
     data.forEach(link => Links.insert(link));
   }
+
+  SimpleRest.configure({
+       collections: []
+   });
+
+
+   JsonRoutes.add("get", "/links/:id", function (req, res, next) {
+     var id = req.params.id;
+
+     JsonRoutes.sendResult(res, {
+       data: Links.findOne(id)
+     });
+   });
+   // Enable cross origin requests for all endpoints
+   JsonRoutes.setResponseHeaders({
+       "Cache-Control": "no-store",
+       "Pragma": "no-cache",
+       "Access-Control-Allow-Origin": "*",
+       "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
+       "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With"
+   });
 });
