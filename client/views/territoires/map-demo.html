@@ -1,0 +1,10 @@
+
+
+
+<template name="map">
+<div class="map-container">
+{{> googleMap name="exampleMap" options=exampleMapOptions}}
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmqNJKhtH6jtRzddvbzT9WLkLW2IwhGgQ&libraries=drawing,geometry&callback=exampleMapOptions"
+type="text/javascript"></script>
+</template>

@@ -1,0 +1,21 @@
+<template name="entrepriseItem">
+
+  <tr>
+      <td class="project-status">
+          <span class="label label-primary">Active</span>
+      </td>
+      <td class="project-title">
+          <a href="{{pathFor route='home'}}">{{Nom}}</a>
+          <br/>
+          <small>iD: {{_id}} -  Created {{createdAt}}</small>
+      </td>
+
+
+      <td class="project-actions">
+          
+          <a href="{{pathFor 'entrepriseEdit'}}" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Modifier</a>
+
+      </td>
+  </tr>
+
+</template>

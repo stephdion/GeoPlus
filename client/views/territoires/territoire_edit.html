@@ -1,0 +1,40 @@
+<template name="entrepriseEdit">
+
+  {{> pageHeading title='Modifier une entreprise' category='Entreprises'  }}
+
+
+  <div class="wrapper wrapper-content animated fadeInUp">
+
+      <div class="ibox">
+
+          <div class="ibox-content">
+
+              <form class="new-entreprise">
+
+
+                <input type="text" name="Nom" value="{{Nom}}" placeholder="Nom de l'entreprise" class="form-control">
+                <br />
+                <input type="text" name="Logo" value="{{Logo}}" placeholder="Url du logo" class="form-control">
+                <br />
+                <input type="text" name="Responsable" value="{{Responsable}}" placeholder="Nom du responsable" class="form-control">
+                <br />
+                <input type="text" name="Adresse" value="{{Adresse}}" placeholder="Adresse de l'entreprise" class="form-control">
+                <br />
+                <input type="text" name="GeoCode" value="{{GeoCode}}" placeholder="GeoCode - devrait être un lien vers la carte" class="form-control">
+
+                                <br />
+                                <input class="btn btn-lg btn-primary  " type="submit"  value="Modifier l'entreprise">&nbsp;&nbsp;&nbsp;<a class="btn btn-danger btn-lg  delete" href="#">Supprimer</a>
+
+
+
+              </form>
+
+
+              </div>
+
+
+
+      </div>
+  </div>
+
+</template>

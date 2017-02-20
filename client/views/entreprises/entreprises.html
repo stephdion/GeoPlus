@@ -1,0 +1,54 @@
+<template name="entreprises">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Entreprises' }}
+
+    <div align="center"><br /><a  class="btn btn-primary btn-lg"  href="{{pathFor route='Nouvelle_entreprise'}}"><i class="fa fa-send"></i>&nbsp;&nbsp;Ajouter une entreprise</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wrapper wrapper-content animated fadeInUp">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>Liste des entreprises</h5>
+
+
+
+            </div>
+            <div class="ibox-content">
+                <div class="row m-b-sm m-t-sm">
+                    <div class="col-md-1">
+                        <button type="button" id="loading-example-btn" class="btn btn-white btn-sm" ><i class="fa fa-refresh"></i> Refresh</button>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
+                    </div>
+                </div>
+
+                <div class="project-list">
+
+                    <table class="table table-hover">
+                        <tbody>
+
+
+                        {{#each entreprises}}
+                          {{> entrepriseItem}}
+                        {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,54 @@
+
+
+<template name="entreprisesForm">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Ajouter une entreprise' category='Entreprises'  }}
+
+
+    <div class="wrapper wrapper-content animated fadeInUp">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <h2><i class="fa fa-send"></i>&nbsp;&nbsp;Nouvelle entreprise</h2>
+
+
+
+            </div>
+            <div class="ibox-content">
+
+                <form class="new-entreprise">
+
+
+                  <input type="text" name="Nom" placeholder="Nom de l'entreprise" class="form-control">
+                  <br />
+                  <input type="text" name="Logo" placeholder="Url du logo" class="form-control">
+                  <br />
+                  <input type="text" name="Responsable" placeholder="Nom du responsable" class="form-control">
+                  <br />
+                  <input type="text" name="Adresse" placeholder="Adresse de l'entreprise" class="form-control">
+                  <br />
+                  <select class="form-control m-b" name="GeoCode" _val="{{button_style}}">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select>
+
+
+
+                                  <br />
+                                  <input class="btn btn-lg btn-primary  " type="submit"  value="Ajouter l'entreprise">
+
+
+
+                </form>
+
+
+                </div>
+
+
+
+        </div>
+    </div>
+</template>

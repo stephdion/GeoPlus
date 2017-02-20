@@ -1,0 +1,47 @@
+
+
+<template name="territoiresForm">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Ajouter un territoire' category='Territoires'  }}
+
+
+    <div class="wrapper wrapper-content animated fadeInUp">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <h2><i class="fa fa-globe"></i>&nbsp;&nbsp;Nouveau territoire</h2>
+
+
+
+            </div>
+            <div class="ibox-content">
+
+                <form class="new-entreprise">
+
+
+                  <input type="text" name="Nom" placeholder="Nom de l'entreprise" class="form-control">
+                  <br />
+                  <input type="text" name="Logo" placeholder="Url du logo" class="form-control">
+                  <br />
+                  <input type="text" name="Responsable" placeholder="Nom du responsable" class="form-control">
+                  <br />
+                  <input type="text" name="Adresse" placeholder="Adresse de l'entreprise" class="form-control">
+                  <br />
+                  <input type="text" name="GeoCode" placeholder="GeoCode - devrait être un lien vers la carte" class="form-control">
+
+                                  <br />
+                                  <input class="btn btn-lg btn-primary  " type="submit"  value="Ajouter le territoire">
+
+
+
+                </form>
+
+
+                </div>
+
+
+
+        </div>
+    </div>
+</template>

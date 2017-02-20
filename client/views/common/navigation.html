@@ -1,0 +1,37 @@
+<template name="navigation">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+
+            <!-- Close canvas menu used only on OffCanvas page -->
+            <!-- You can remove this tag if you dont use offCanvas menu -->
+            <a class="close-canvas-menu"><i class="fa fa-times"></i></a>
+            <!-- End offCanvas menu toggle -->
+
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element" align="center">
+                      <img alt="image" class="img-circle" src="logo_petit.png" />
+
+                          <strong class="font-bold">  {{> loginButtons}}</strong>
+
+                    </div>
+                    <div class="logo-element">
+                        GEO+
+                    </div>
+                </li>
+                <li class="{{isActiveRoute regex='entreprises'}}">
+                    <a href="{{pathFor route='entreprises'}}"><i class="fa fa-send"></i> <span class="nav-label">Entreprises</span> </a>
+                </li>          <li class="{{isActiveRoute regex='territoires'}}">
+                    <a href="{{pathFor route='territoires'}}"><i class="fa fa-globe"></i> <span class="nav-label">Territoires</span> </a>
+                </li>
+                <li class="{{isActiveRoute regex='territoires-design'}}">
+                    <a href="{{pathFor route='territoires-design'}}"><i class="fa fa-globe"></i> <span class="nav-label">Territoires Design</span> </a>
+                </li>
+                   <li class="{{isActiveRoute regex='register'}}">
+                  <a href="{{pathFor route='register'}}"><i class="fa fa-user"></i> <span class="nav-label">Usagers</span> </a>
+              </li>
+            </ul>
+
+        </div>
+    </nav>
+</template>
