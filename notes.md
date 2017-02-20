@@ -40,3 +40,6 @@ heroku config:add MONGO_URL=mongodb://heroku_qkk32kdm:737v3ovo46v4rs8dl973qrvs8i
 heroku config:add ROOT_URL=https://geoplus.herokuapp.com/
 
 heroku logs --tail
+
+
+Version de ce projet https://github.com/dburles/meteor-google-maps#examples

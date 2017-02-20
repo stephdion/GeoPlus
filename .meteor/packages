@@ -24,8 +24,10 @@ johanbrook:publication-collector  # Test a Meteor publication by collecting its 
 redaty:admin-lte
 twbs:bootstrap
 
+
 simple:rest
 simple:json-routes
 accounts-ui@1.1.9
 accounts-password@1.3.3
 meteortoys:allthings
+dburles:google-maps
