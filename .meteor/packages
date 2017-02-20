@@ -26,5 +26,12 @@ practicalmeteor:mocha             # A package for writing and running your meteo
 johanbrook:publication-collector  # Test a Meteor publication by collecting its output
 redaty:admin-lte
 twbs:bootstrap
+<<<<<<< HEAD
 simple:rest
 simple:json-routes
+=======
+
+accounts-ui@1.1.9
+accounts-password@1.3.3
+meteortoys:allthings
+>>>>>>> origin/master

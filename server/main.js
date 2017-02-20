@@ -1,4 +1,14 @@
-// Server entry point, imports all server code
+import { Meteor } from 'meteor/meteor';
 
-import '/imports/startup/server';
-import '/imports/startup/both';
+Meteor.startup(() => {
+
+  if (Meteor.users.find().count() === 0) {
+      seedUserId = Accounts.createUser({
+        email: 'GoeAdmin@geo.com',
+        password: 'GeoCode$'
+      });
+
+    }
+
+
+});
