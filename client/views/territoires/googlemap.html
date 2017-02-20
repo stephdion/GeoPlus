@@ -1,0 +1,85 @@
+<template name="googlemap">
+
+  {{> pageHeading title='Territoires' }}
+<style type="text/css">
+            #map {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 700px;
+            }
+
+            #panel {
+                width: 200px;
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                float: right;
+                margin: 10px;
+            }
+
+            #color-palette {
+                clear: both;
+            }
+
+            .color-button {
+                width: 14px;
+                height: 14px;
+                font-size: 0;
+                margin: 2px;
+                float: left;
+                cursor: pointer;
+            }
+
+            #delete-button {
+                margin-top: 5px;
+            }
+
+
+
+        </style>
+    <!-- Page heading -->
+
+    <div class="wrapper wrapper-content  animated fadeInRight">
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Territoires</h5>
+                    </div>
+                    <div class="ibox-content">
+                       <div id="map"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="ibox ">
+
+                
+
+                    <div class="ibox-content">
+
+                       <div id="buttons">
+                            <div id="color-palette"></div>
+                            <input type="button" id="delete-button" value="Effacer sélection">
+
+                            <input type="button" id="clear-button" value="Effacer tout">
+                            <textarea id="console" readonly="readonly" style="width:100%;height:100%;border:0px;margin:0px;background-color:#e0f0a0;"></textarea>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmqNJKhtH6jtRzddvbzT9WLkLW2IwhGgQ&libraries=drawing,geometry" type="text/javascript" ></script>
+
+
+</template>
