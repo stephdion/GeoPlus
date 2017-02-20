@@ -32,3 +32,11 @@ Deployment
 https://www.youtube.com/watch?v=qq2CssWFQ7o&t=133s
 
 DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy wdidi.com --settings settings-production.json
+
+
+
+
+heroku config:add MONGO_URL=mongodb://heroku_qkk32kdm:737v3ovo46v4rs8dl973qrvs8i@ds157479.mlab.com:57479/
+heroku config:add ROOT_URL=https://geoplus.herokuapp.com/
+
+heroku logs --tail
