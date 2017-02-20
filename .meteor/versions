@@ -91,14 +91,11 @@ redaty:admin-lte@0.0.5
 reload@1.1.11
 retry@1.0.9
 routepolicy@1.0.12
-<<<<<<< HEAD
-simple:json-routes@2.1.0
-simple:rest@1.1.1
-=======
 service-configuration@1.0.11
 session@1.1.7
 sha@1.0.9
->>>>>>> origin/master
+simple:json-routes@2.1.0
+simple:rest@1.1.1
 spacebars@1.0.13
 spacebars-compiler@1.1.0
 srp@1.0.10

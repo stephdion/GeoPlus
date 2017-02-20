@@ -37,12 +37,7 @@ Meteor.startup(() => {
    });
 
 
-   JsonRoutes.add("get", "/links/:id", function (req, res, next) {
-     var id = req.params.id;
-
-     JsonRoutes.sendResult(res, {
-       data: Links.findOne(id)
-     });
+   
    });
    // Enable cross origin requests for all endpoints
    JsonRoutes.setResponseHeaders({
